@@ -1,22 +1,22 @@
 package org.academiadecodigo.bitjs.voiceToTheSilent.service;
 
 import org.academiadecodigo.bitjs.voiceToTheSilent.model.Family;
-import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
 
 public class FamilyService {
 
-    private HashMap<Integer, Family> familiesList = new HashMap<>();
+    private List<Family> familiesList = new LinkedList<>();
 
     public void populateList(Family newFamily){
-        this.familiesList.put(newFamily.getId(),newFamily);
+        this.familiesList.add(newFamily);
     }
 
-    public HashMap<Integer, Family> getFamiliesList() {
+    public List<Family> getFamiliesList() {
         return familiesList;
     }
 
-    public void setFamiliesList(HashMap<Integer, Family> familiesList) {
+    public void setFamiliesList(List<Family> familiesList) {
         this.familiesList = familiesList;
     }
-
 }

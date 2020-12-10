@@ -2,12 +2,13 @@ package org.academiadecodigo.bitjs.voiceToTheSilent.bootstrap;
 
 import org.academiadecodigo.bitjs.voiceToTheSilent.model.IsolatedCase;
 import org.academiadecodigo.bitjs.voiceToTheSilent.service.CasesService;
+import java.util.List;
 
-public class Bootstrap {
-    private IsolatedCase isolatedCase;
+public class BootstrapIsolatedCases {
+
     private CasesService casesService;
 
-    public void InstantiateAndPopulateCasesList(){
+    public List<IsolatedCase> InstantiateAndPopulateCasesList(){
 
         IsolatedCase isolatedCase1 = new IsolatedCase();
         isolatedCase1.setId(1);
@@ -53,14 +54,13 @@ public class Bootstrap {
         isolatedCase5.setHistory("Hibraim dream to attend a schoold class but need to make small jobs to get food.");
         isolatedCase5.setInstitution("Operation Smile");
 
-        CasesService casesService = new CasesService();
+
         casesService.populateList(isolatedCase1);
         casesService.populateList(isolatedCase2);
         casesService.populateList(isolatedCase3);
         casesService.populateList(isolatedCase4);
         casesService.populateList(isolatedCase5);
+
+        return casesService.getCasesList();
     }
-
-
-
 }
