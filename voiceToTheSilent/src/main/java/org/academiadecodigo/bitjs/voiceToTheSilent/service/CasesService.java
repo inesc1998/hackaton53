@@ -8,7 +8,7 @@ public class CasesService {
 
     private List<IsolatedCase> casesList = new LinkedList<>();
 
-    public void populateList(IsolatedCase newCase) {
+    public void populateList(IsolatedCase newCase){
         this.casesList.add(newCase);
     }
     public List<IsolatedCase> getCasesList() {
