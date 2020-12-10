@@ -1,6 +1,6 @@
 package org.academiadecodigo.bitjs.voiceToTheSilent.model;
 
-public class Familly {
+public class Family {
     private Integer id;
     private String name;
     private String address;
