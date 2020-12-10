@@ -26,4 +26,5 @@ public class FamiliesController {
     public void setBootstrapFamilies(BootstrapFamilies bootstrapFamilies) {
         this.bootstrapFamilies = bootstrapFamilies;
     }
+
 }
