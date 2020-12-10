@@ -1,0 +1,16 @@
+org/academiadecodigo/bitjs/voiceToTheSilent/model/IsolatedCase.class
+org/academiadecodigo/bitjs/voiceToTheSilent/model/Institution.class
+org/academiadecodigo/bitjs/voiceToTheSilent/bootstrap/BootstrapFamilies.class
+org/academiadecodigo/bitjs/voiceToTheSilent/bootstrap/BootstrapIsolatedCases.class
+org/academiadecodigo/bitjs/voiceToTheSilent/service/InstitutionService.class
+org/academiadecodigo/bitjs/voiceToTheSilent/model/Godfather.class
+org/academiadecodigo/bitjs/voiceToTheSilent/bootstrap/BootstrapInstitutions.class
+org/academiadecodigo/bitjs/voiceToTheSilent/service/GodfatherService.class
+org/academiadecodigo/bitjs/voiceToTheSilent/controller/OptionsController.class
+org/academiadecodigo/bitjs/voiceToTheSilent/service/CasesService.class
+org/academiadecodigo/bitjs/voiceToTheSilent/controller/MainController.class
+org/academiadecodigo/bitjs/voiceToTheSilent/service/FamilyService.class
+org/academiadecodigo/bitjs/voiceToTheSilent/controller/FamiliesController.class
+org/academiadecodigo/bitjs/voiceToTheSilent/controller/InstitutionsController.class
+org/academiadecodigo/bitjs/voiceToTheSilent/controller/CasesController.class
+org/academiadecodigo/bitjs/voiceToTheSilent/model/Family.class

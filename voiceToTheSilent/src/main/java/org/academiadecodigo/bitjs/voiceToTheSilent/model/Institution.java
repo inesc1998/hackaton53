@@ -38,4 +38,14 @@ public class Institution {
     public void setId(Integer id) {
         this.id = id;
     }
+
+    @Override
+    public String toString() {
+        return "Institution{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", cause='" + cause + '\'' +
+                ", history='" + history + '\'' +
+                '}';
+    }
 }

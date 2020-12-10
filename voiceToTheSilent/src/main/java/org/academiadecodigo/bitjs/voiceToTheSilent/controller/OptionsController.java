@@ -10,6 +10,6 @@ public class OptionsController {
 
     @RequestMapping(method = RequestMethod.GET, path = {"/", ""})
     public String optionsMenu() {
-        return "voicets/optionslist"; //html file names
+        return "optionslist"; //html file names
     }
 }

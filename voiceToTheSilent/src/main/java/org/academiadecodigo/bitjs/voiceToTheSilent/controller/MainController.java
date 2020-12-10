@@ -14,7 +14,7 @@ public class MainController {
      */
     @RequestMapping(method = RequestMethod.GET, path = {"/", ""})
     public String home() {
-        return "voicets/home";
+        return "home";
     }
 }
 

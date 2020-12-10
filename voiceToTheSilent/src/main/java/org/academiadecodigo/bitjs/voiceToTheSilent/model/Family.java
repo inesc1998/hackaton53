@@ -56,4 +56,17 @@ public class Family {
     public void setId(Integer id) {
         this.id = id;
     }
+
+
+    @Override
+    public String toString() {
+        return "Family{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                ", elements=" + elements +
+                ", history='" + history + '\'' +
+                ", institution='" + institution + '\'' +
+                '}';
+    }
 }

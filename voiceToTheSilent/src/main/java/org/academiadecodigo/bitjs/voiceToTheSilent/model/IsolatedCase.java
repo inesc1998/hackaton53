@@ -56,4 +56,17 @@ public class IsolatedCase{
     public void setId(Integer id) {
         this.id = id;
     }
+
+
+    @Override
+    public String toString() {
+        return "IsolatedCase{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                ", age=" + age +
+                ", history='" + history + '\'' +
+                ", institution='" + institution + '\'' +
+                '}';
+    }
 }

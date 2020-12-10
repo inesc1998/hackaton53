@@ -1,15 +1,18 @@
 package org.academiadecodigo.bitjs.voiceToTheSilent.bootstrap;
 
 import org.academiadecodigo.bitjs.voiceToTheSilent.model.Family;
+import org.academiadecodigo.bitjs.voiceToTheSilent.model.IsolatedCase;
 import org.academiadecodigo.bitjs.voiceToTheSilent.service.FamilyService;
+import org.springframework.stereotype.Component;
 
+import java.util.LinkedList;
 import java.util.List;
 
+@Component
 public class BootstrapFamilies {
 
-    private FamilyService familyService;
 
-    public List<Family> InstantiateAndPopulateFamiliesList(){
+    public List<Family> InstantiateAndPopulateFamiliesList(FamilyService familyService){
 
         Family family1 = new Family();
         family1.setId(1);
@@ -43,11 +46,14 @@ public class BootstrapFamilies {
         family4.setHistory("Malaria kill thousands every single year leaving many impaired , Abubakar live in the shadow of this silent killer, so sleep under nets are mandatory.");
         family4.setInstitution("AFRICARE");
 
-        familyService.populateList(family1);
-        familyService.populateList(family2);
-        familyService.populateList(family3);
-        familyService.populateList(family4);
+        List<Family> familiesList = new LinkedList<>();
 
-        return familyService.getFamiliesList();
+        familiesList.add(family1);
+        familiesList.add(family2);
+        familiesList.add(family3);
+        familiesList.add(family4);
+
+
+        return familiesList;
     }
 }

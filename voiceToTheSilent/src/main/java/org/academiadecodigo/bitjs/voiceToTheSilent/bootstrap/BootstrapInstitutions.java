@@ -1,15 +1,17 @@
 package org.academiadecodigo.bitjs.voiceToTheSilent.bootstrap;
 
 import org.academiadecodigo.bitjs.voiceToTheSilent.model.Institution;
+import org.academiadecodigo.bitjs.voiceToTheSilent.model.IsolatedCase;
 import org.academiadecodigo.bitjs.voiceToTheSilent.service.InstitutionService;
+import org.springframework.stereotype.Component;
 
+import java.util.LinkedList;
 import java.util.List;
 
+@Component
 public class BootstrapInstitutions {
 
-    private InstitutionService institutionService;
-
-    public List<Institution> InstantiateAndPopulateInstitutionsList(){
+    public List<Institution> InstantiateAndPopulateInstitutionsList(InstitutionService institutionService){
         Institution institution1 = new Institution();
         institution1.setId(1);
         institution1.setName("AFRICACARE");
@@ -28,10 +30,12 @@ public class BootstrapInstitutions {
         institution3.setCause("Social assistance. Food gathering.");
         institution3.setCause("Multiple causes to help less unfortunate people");
 
-        institutionService.populateList(institution1);
-        institutionService.populateList(institution2);
-        institutionService.populateList(institution3);
+        List<Institution> institutionList = new LinkedList<>();
 
-        return institutionService.getInstitutionsList();
+        institutionList.add(institution1);
+        institutionList.add(institution2);
+        institutionList.add(institution3);
+
+        return institutionList;
     }
 }

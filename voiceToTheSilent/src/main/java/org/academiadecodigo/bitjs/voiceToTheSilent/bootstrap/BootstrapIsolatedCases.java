@@ -2,13 +2,17 @@ package org.academiadecodigo.bitjs.voiceToTheSilent.bootstrap;
 
 import org.academiadecodigo.bitjs.voiceToTheSilent.model.IsolatedCase;
 import org.academiadecodigo.bitjs.voiceToTheSilent.service.CasesService;
+import org.springframework.stereotype.Component;
+
+import java.util.LinkedList;
 import java.util.List;
 
+@Component
 public class BootstrapIsolatedCases {
 
-    private CasesService casesService;
+    //private CasesService casesService;
 
-    public List<IsolatedCase> InstantiateAndPopulateCasesList(){
+    public List<IsolatedCase> InstantiateAndPopulateCasesList(CasesService casesService){
 
         IsolatedCase isolatedCase1 = new IsolatedCase();
         isolatedCase1.setId(1);
@@ -55,12 +59,24 @@ public class BootstrapIsolatedCases {
         isolatedCase5.setInstitution("Operation Smile");
 
 
-        casesService.populateList(isolatedCase1);
+        /*casesService.populateList(isolatedCase1);
         casesService.populateList(isolatedCase2);
         casesService.populateList(isolatedCase3);
         casesService.populateList(isolatedCase4);
-        casesService.populateList(isolatedCase5);
+        casesService.populateList(isolatedCase5);*/
 
-        return casesService.getCasesList();
+        List<IsolatedCase> casesList = new LinkedList<>();
+
+        casesList.add(isolatedCase1);
+        casesList.add(isolatedCase2);
+        casesList.add(isolatedCase3);
+        casesList.add(isolatedCase4);
+        casesList.add(isolatedCase5);
+
+        //casesService.setCasesList(casesList);
+
+        //System.out.println("------------CASESLIST:---------------------\n" + casesList);
+
+        return casesList;
     }
 }
