@@ -1,14 +1,13 @@
 package org.academiadecodigo.bitjs.voiceToTheSilent.model;
 
 public class IsolatedCase{
+
     private Integer id;
     private String name;
     private String address;
     private int age;
     private String history;
-    private String  institution;
-
-
+    private String institution;
 
     public String getName() {
         return name;
@@ -18,8 +17,6 @@ public class IsolatedCase{
         this.name = name;
     }
 
-
-
     public int getAge() {
         return age;
     }
@@ -27,8 +24,6 @@ public class IsolatedCase{
     public void setAge(int age) {
         this.age = age;
     }
-
-
 
     public String getAddress() {
         return address;
@@ -38,8 +33,6 @@ public class IsolatedCase{
         this.address = address;
     }
 
-
-
     public String getHistory() {
         return history;
     }
@@ -48,13 +41,19 @@ public class IsolatedCase{
         this.history = history;
     }
 
-
-
     public String getInstitution() {
         return institution;
     }
 
     public void setInstitution(String institution) {
         this.institution = institution;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 }

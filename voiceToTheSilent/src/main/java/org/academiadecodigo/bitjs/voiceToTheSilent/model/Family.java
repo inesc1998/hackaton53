@@ -1,13 +1,13 @@
 package org.academiadecodigo.bitjs.voiceToTheSilent.model;
 
-public class Familly {
+public class Family {
+
     private Integer id;
     private String name;
     private String address;
     private int elements;
     private String history;
     private String  institution;
-
 
     public String getName() {
         return name;
@@ -17,8 +17,6 @@ public class Familly {
         this.name = name;
     }
 
-
-
     public String getAddress() {
         return address;
     }
@@ -26,8 +24,6 @@ public class Familly {
     public void setAddress(String address) {
         this.address = address;
     }
-
-
 
     public int getElements() {
         return elements;
@@ -37,8 +33,6 @@ public class Familly {
         this.elements = elements;
     }
 
-
-
     public String getHistory() {
         return history;
     }
@@ -47,13 +41,19 @@ public class Familly {
         this.history = history;
     }
 
-
-
     public String getInstitution() {
         return institution;
     }
 
     public void setInstitution(String institution) {
         this.institution = institution;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 }
