@@ -43,6 +43,15 @@ public class InstitutionsController {
         return "redirect:/institutions/" + id;
     }
 
+    @RequestMapping(method = RequestMethod.GET, path = "/about/{id}")  //id do case associado ao godfather
+    public String about(@PathVariable Integer id, Model model) {
+        List<Institution> institutionList = bootstrapInstitutions.InstantiateAndPopulateInstitutionsList(institutionService);
+        Institution institution = institutionList.get(id-1);
+        model.addAttribute("institution", institution);
+        model.addAttribute("choiceId", id);
+        return "aboutInstitutions";
+    }
+
     @Autowired
     public void setBootstrapInstitutions(BootstrapInstitutions bootstrapInstitutions) {
         this.bootstrapInstitutions = bootstrapInstitutions;

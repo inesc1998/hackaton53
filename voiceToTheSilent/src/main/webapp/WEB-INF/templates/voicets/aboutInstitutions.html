@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            width: 70%;
+            margin: auto;
+        }
+        html {
+            color: #222;
+            font-size: 1em;
+            line-height: 1.4;
+        }
+        #carousel{
+            background-color: #72C4BC;
+        }
+        #logo{
+            position: absolute;
+            width: 120px;
+        }
+        #title{
+            text-align: left;
+            padding-top: 10px;
+            height: 140px;
+            background-color: #72C4BC;
+        }
+
+        #titletext{
+            padding-top: 1%;
+            font-size: 50px;
+            margin-left: 9%;
+        }
+        section{
+            padding-top: 1%;
+            width: 100% ;
+            height: 320px;
+            text-align: center;
+        }
+        #aboutus{
+            font-size: 40px;
+            text-align: center;
+        }
+        #textabout{
+            font-size: 40px;
+            margin: 5%;
+            text-align: center;
+            letter-spacing: 0.10pc ;
+        }
+        #sponsor{
+            background-color: whitesmoke ;
+            height: 150px;
+        }
+        #footer{
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 320px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div id="title">
+    <img id="logo"src="https://i.ibb.co/M8sG2xP/logo.png" alt="not">
+    <h1 id="titletext">Voice to the silent</h1>
+</div>
+
+<section>
+    <h2 id=“aboutus” style="margin-bottom: 20px; font-size: 40px">Story</h2>
+
+    <p id=“textabout” style="font-size: 25px; margin-right: 30px; margin-left: 30px" th:text="${institution.cause}"></p>
+
+</section>
+
+<div class="container">
+    <div class="row">
+        <div class="col text-center">
+            <a th:href="@{'/institutions/' + ${institution.id}}"> <button type="button" id="donate" class="btn btn-dark btn-lg download-button"><i class="fas fa-fist-raised"></i> Donate </button></a>
+            <a th:href="@{'/'}"><button type="button" id="home" class="btn btn-dark btn-lg download-button"><i class="fas fa-fist-raised"></i> Home </button></a>
+            <a th:href="@{'/institutions/'}"><button type="button" id="back" class="btn btn-dark btn-lg download-button"><i class="fas fa-fist-raised"></i> Back </button></a>
+        </div>
+    </div>
+</div>
+
+<img id="footer" src="https://i.ibb.co/P48jRGw/footer.jpg" alt="some text" >
+
+</body>
+</html>

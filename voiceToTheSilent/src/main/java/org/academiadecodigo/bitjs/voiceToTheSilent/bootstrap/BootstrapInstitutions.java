@@ -16,19 +16,16 @@ public class BootstrapInstitutions {
         institution1.setId(1);
         institution1.setName("AFRICACARE");
         institution1.setCause("Africare is a leading non-governmental organization (NGO) committed to addressing African development and policy issues by working in partnership with African people to build sustainable, healthy and productive communities.");
-        institution1.setCause("Build sustainable, healthy and productive communities");
 
         Institution institution2 = new Institution();
         institution2.setId(2);
         institution2.setName("UNICEF");
-        institution2.setCause("Operation Smile(indigent suport). Water for Good (water management and usage improvement in 3 world");
-        institution2.setCause("Multiple causes to aid several groups.");
+        institution2.setCause("UNICEF works in the world’s toughest places to reach the most disadvantaged children and adolescents – and to protect the rights of every child, everywhere. Across more than 190 countries and territories, we do whatever it takes to help children survive, thrive and fulfill their potential, from early childhood through adolescence.");
 
         Institution institution3 = new Institution();
         institution3.setId(3);
         institution3.setName("Caritas");
-        institution3.setCause("Social assistance. Food gathering.");
-        institution3.setCause("Multiple causes to help less unfortunate people");
+        institution3.setCause("Caritas believe that people and the environment, not profits, should be at the heart of all policies. We oppose all kinds of exclusions and support all initiatives that promote sustainable development that benefit everyone and enable all people to find a meaningful role to play in society.");
 
         List<Institution> institutionList = new LinkedList<>();
 

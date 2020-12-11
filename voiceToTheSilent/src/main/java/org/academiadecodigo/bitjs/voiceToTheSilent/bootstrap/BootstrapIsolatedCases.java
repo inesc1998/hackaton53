@@ -19,7 +19,7 @@ public class BootstrapIsolatedCases {
         isolatedCase1.setName("João Sousa");
         isolatedCase1.setAddress("Lisboa");
         isolatedCase1.setAge(8);
-        isolatedCase1.setHistory("Sousa's family is struggling to get food to their little child. As soon the pandemic crisis began, both parents got unemployed and are struggling to put all daily meals in the table.");
+        isolatedCase1.setHistory("Sousa's family is struggling to get food to their little child. As soon the pandemic crisis began, both parents got unemployed and are struggling to put all daily meals on the table.");
         isolatedCase1.setInstitution("Caritas Faial");
 
 
@@ -28,7 +28,7 @@ public class BootstrapIsolatedCases {
         isolatedCase2.setName("Anjal");
         isolatedCase2.setAddress("India");
         isolatedCase2.setAge(9);
-        isolatedCase2.setHistory("I come from a poor family. At home it's one room, just a room we live in.");
+        isolatedCase2.setHistory("Anjal comes from a very poor family. Living in precarious conditions she and her family have to share the same room that lacks not only furniture but also an appropriate infrastructure.");
         isolatedCase2.setInstitution("Khan Academy");
 
 
@@ -37,7 +37,7 @@ public class BootstrapIsolatedCases {
         isolatedCase3.setName("Ramalandam");
         isolatedCase3.setAddress("Pakistan");
         isolatedCase3.setAge(13);
-        isolatedCase3.setHistory("Ramalandam need hep for medical assistance");
+        isolatedCase3.setHistory("Ramalandam is in urgent need for medical assistance. He has a serious condition and in Pakistan medication is very expensive.");
         isolatedCase3.setInstitution("Uplift International");
 
 
@@ -46,7 +46,7 @@ public class BootstrapIsolatedCases {
         isolatedCase4.setName("Jamalian");
         isolatedCase4.setAddress("Kenya");
         isolatedCase4.setAge(16);
-        isolatedCase4.setHistory("Jamalian spend 4 hours daily to fetch water for is family . Time she could use to study , rest or even to play with friends." );
+        isolatedCase4.setHistory("Jamalian lives in a town without access to fresh and drinkable water. He spends 4 hours every day, walking on foot to fetch water for his family." );
         isolatedCase4.setInstitution("Water for good");
 
 
@@ -55,15 +55,8 @@ public class BootstrapIsolatedCases {
         isolatedCase5.setName("Hibraim");
         isolatedCase5.setAddress("Iraq");
         isolatedCase5.setAge(12);
-        isolatedCase5.setHistory("Hibraim dream to attend a schoold class but need to make small jobs to get food.");
+        isolatedCase5.setHistory("Hibraim dream to attend a school class but needs to make small jobs to get food for his family.");
         isolatedCase5.setInstitution("Operation Smile");
-
-
-        /*casesService.populateList(isolatedCase1);
-        casesService.populateList(isolatedCase2);
-        casesService.populateList(isolatedCase3);
-        casesService.populateList(isolatedCase4);
-        casesService.populateList(isolatedCase5);*/
 
         List<IsolatedCase> casesList = new LinkedList<>();
 
@@ -72,10 +65,6 @@ public class BootstrapIsolatedCases {
         casesList.add(isolatedCase3);
         casesList.add(isolatedCase4);
         casesList.add(isolatedCase5);
-
-        //casesService.setCasesList(casesList);
-
-        //System.out.println("------------CASESLIST:---------------------\n" + casesList);
 
         return casesList;
     }

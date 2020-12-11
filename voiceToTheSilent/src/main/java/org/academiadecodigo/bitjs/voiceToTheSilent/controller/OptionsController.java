@@ -12,4 +12,9 @@ public class OptionsController {
     public String optionsMenu() {
         return "optionslist"; //html file names
     }
+
+    @RequestMapping(method = RequestMethod.GET, path = {"/candidate/"})
+    public String candidateoptionsMenu() {
+        return "candidateOptions"; //html file names
+    }
 }

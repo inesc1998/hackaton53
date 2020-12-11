@@ -1,6 +1,7 @@
 package org.academiadecodigo.bitjs.voiceToTheSilent.controller;
 
 import org.academiadecodigo.bitjs.voiceToTheSilent.bootstrap.BootstrapIsolatedCases;
+import org.academiadecodigo.bitjs.voiceToTheSilent.model.Family;
 import org.academiadecodigo.bitjs.voiceToTheSilent.model.Godfather;
 import org.academiadecodigo.bitjs.voiceToTheSilent.model.IsolatedCase;
 import org.academiadecodigo.bitjs.voiceToTheSilent.service.CasesService;
@@ -42,6 +43,15 @@ public class CasesController {
         //godfatherService.populateList(godfather);
         redirectAttributes.addFlashAttribute("lastAction", " Your donation is very important for us " + godfather.getName() + ". We will get in touch soon!");
         return "redirect:/cases/" + id;
+    }
+
+    @RequestMapping(method = RequestMethod.GET, path = "/about/{id}")  //id do case associado ao godfather
+    public String about(@PathVariable Integer id, Model model) {
+        List<IsolatedCase> casesList = bootstrapIsolatedCases.InstantiateAndPopulateCasesList(casesService);
+        IsolatedCase isolatedCase = casesList.get(id-1);
+        model.addAttribute("case", isolatedCase);
+        model.addAttribute("choiceId", id);
+        return "/aboutCases";
     }
 
     @Autowired

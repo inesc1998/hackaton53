@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/85aba45acf.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            width: 70%;
+            margin: auto;
+        }
+        html {
+            color: #222;
+            font-size: 1em;
+            line-height: 1.4;
+        }
+        #carousel{
+            background-color: #72C4BC;
+        }
+        #logo{
+            position: absolute;
+            width: 120px;
+        }
+        #title{
+            text-align: left;
+            padding-top: 10px;
+            padding-bottom: 100px;;
+            height: 140px;
+            background-color: #72C4BC;
+        }
+        #titletext{
+            padding-top: 1%;
+            font-size: 50px;
+            margin-left: 9%;
+        }
+        #about{
+            padding-top: 9%;
+            width: 100% ;
+            height: 700px;
+            background-color: white ;
+        }
+        #aboutus{
+            font-size: 40px;
+            text-align: center;
+        }
+        #Institutions{
+            margin: 0;
+            position: relative;
+            top: 5%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 50px;
+            padding-right: 50px;
+            font-size: 30px;
+            color: #72C4BC;
+            background-color: #f8f8f800 ;
+        }
+        #Families{
+            margin: 0;
+            position: relative;
+            top: 5%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 50px;
+            padding-right: 50px;
+            color: #72C4BC;
+            font-size: 30px;
+            background-color: #f8f8f800 ;
+        }
+        #Cases{
+            margin: 0;
+            position: relative;
+            top: 5%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 50px;
+            padding-right: 50px;
+            font-size: 30px;
+            color: #72C4BC;
+            background-color: #f8f8f800 ;
+        }
+        #textabout{
+            font-size: 20px;
+            margin: 3%;
+            text-align: center;
+            letter-spacing: 0.10pc ;
+        }
+        #sponsor{
+            background-color: white ;
+            height: 150px;
+        }
+        #footer{
+            height: 1222px;
+            width: 100%;
+            background-color: #72C4BC;
+            text-align: center;
+        }
+        #socialtext{
+            position: relative;
+            margin-bottom:-3px;
+            background-color: rgb(235, 232, 232);
+            width: 100%;
+            height: 70px;
+        }
+        #facebook{margin: 0;
+            position: relative;
+            top: 5%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 30px;
+            color: #72C4BC;
+            background-color: #f8f8f800 ;
+        }
+        #twitter{
+            margin: 0;
+            position: relative;
+            top: 5%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 30px;
+            color: #72C4BC;
+            background-color: #f8f8f800 ;
+        }
+        #instagram{
+            margin: 0;
+            position: relative;
+            top: 5%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 30px;
+            color: #72C4BC;
+            background-color: #f8f8f800 ;
+        }
+        #copyright{
+            background-color:#72C4BC ;
+            padding-top: 10px;
+            text-align: center;
+            height: 80px;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+<div id="title">
+    <img id="logo" src="https://i.ibb.co/M8sG2xP/logo.png" alt="not">
+    <h1 id="titletext">Voice to the silent</h1>
+</div>
+<section id="about"><h2 id="aboutus"></h2>
+    <section id="sponsor">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <button type="button" id="Institutions" class="btn btn-dark btn-lg download-button"><i class="fas fa-university fa-lg" style="font-size: 200px;"></i> <br> <br> <br>Institutions</button>
+                    <button type="button" id="Families" class="btn btn-dark btn-lg download-button"><i class="fas fa-users fa-lg" style="font-size: 200px;"></i> <br> <br> <br>Families</button>
+                    <button type="button" id="Cases" class="btn btn-dark btn-lg download-button"><i class="fas fa-user fa-lg" style="font-size: 200px;"></i> <br> <br> <br>Isolated Cases</button>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </section>
+</section>
+<p id="socialtext"><b> &nbsp &nbsp TOGETHER WE HAVE THE POWER. JOIN US ON SOCIAL MEDIA </b> <a href="https://www.twitter.com/"> <button type="button" id="twitter" class="btn btn-dark btn-lg download-button"><i class="fab fa-twitter" style="font-size: 30px;"></i> </button> </a>
+
+    <a href="https://www.facebook.com/"><button type="button" id="facebook" class="btn btn-dark btn-lg download-button"><i class="fab fa-facebook" style="font-size: 30px;"></i></button></a>
+
+    <a href="https://www.instagram.com/"><button type="button" id="instagram" class="btn btn-dark btn-lg download-button"><i class="fab fa-instagram" style="font-size: 30px;"></i></button></a></p>
+
+<p id="copyright" style="font-family: sans-serif; font-size: 14px; bottom: 0">   © copyright 2020 VoiceTS </p>
+</body>
+</html>
