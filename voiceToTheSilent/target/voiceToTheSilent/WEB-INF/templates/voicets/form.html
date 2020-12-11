@@ -68,7 +68,7 @@
     <strong style="font-size: 20px">Thank you!</strong> <span style="font-size: 20px"th:text="${lastAction}">last action performed</span>
 </div>
 
-<form id="forms"  th:object="${godfather}" th:action="@{'/cases/' + ${choiceId}}" method="post">
+<form id="forms" th:object="${godfather}" th:action="@{'/cases/' + ${choiceId}}" method="post">
     <div class="mb-3">
         <label for="formGroupExampleInput" class="form-label">Name</label>
         <input type="text" th:field="*{name}" class="form-control" id="formGroupExampleInput" placeholder="Put your name here" >
