@@ -1,12 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>Form View</title>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            width: 70%;
+            margin: auto;
+        }
+        html {
+            color: #222;
+            font-size: 1em;
+            line-height: 1.4;
+        }
+        #logo{
+            position: absolute;
+            width: 120px;
+        }
+        #title{
+            text-align: left;
+            padding-top: 10px;
+            height: 140px;
+            background-color: #72C4BC;
+        }
+        #titletext{
+            padding-top: 1%;
+            font-size: 50px;
+            margin-left: 10%;
+        }
+        #forms{
+            padding-top: 5%;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #footer{
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 320px;
+            text-align: center;
+        }
+        center-text{
+            align-content: center;
+        }
+    </style>
 </head>
 <body>
-
-<h3> FORM VIEW </h3>
-
+<div id="title">
+    <img id="logo"src="https://i.ibb.co/M8sG2xP/logo.png" alt="imageNotFound">
+    <h1 id="titletext">Voice to the silent</h1>
+</div>
+<form id="forms">
+    <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label"> Name</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Put your name here">
+    </div>
+    <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Phone</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Put your contact here">
+    </div>
+    <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">E-mail</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Put your E-mail here">
+    </div>
+    <div class="input-group mb-3">
+        <label class="input-group-text" for="inputGroupSelect01">How will you help?</label>
+        <select class="form-select" id="inputGroupSelect01">
+            <option selected>Choose...</option>
+            <option value="1">With time</option>
+            <option value="2">Money</option>
+            <option value="3">Donating Goods</option>
+            <option value="3">Donating Food</option>
+</form>
+</select>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col center-text">
+            <button type="button" id="submit" class="btn btn-dark btn-lg download-button"><i class="fas fa-fist-raised"></i> Submit </button>
+            <button type="button" id="home" class="btn btn-dark btn-lg download-button"><i class="fas fa-fist-raised"></i> Home </button>
+        </div>
+    </div>
+</div>
+<img id="footer" src="https://i.ibb.co/cvdkLqZ/pam.jpg" alt="imageNotFound" >
 </body>
 </html>

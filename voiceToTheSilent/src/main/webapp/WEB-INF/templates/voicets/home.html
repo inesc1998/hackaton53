@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Bootstrap Example</title>
+    <title>Voice To The Silent</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/85aba45acf.js" crossorigin="anonymous"></script>
@@ -19,11 +18,81 @@
             width: 70%;
             margin: auto;
         }
+        html {
+            color: #222;
+            font-size: 1em;
+            line-height: 1.4;
+        }
+        #carousel{
+            background-color: #72C4BC;
+        }
+        #logo{
+            position: absolute;
+            width: 120px;
+        }
+        #title{
+            text-align: left;
+            padding-top: 10px;
+            height: 140px;
+            background-color: #72C4BC;
+        }
+        #titletext{
+            padding-top: 1%;
+            font-size: 50px;
+            margin-left: 9%;
+        }
+        #about{
+            padding-top: 1%;
+            width: 100% ;
+            height: 320px;
+            background-color: whitesmoke ;
+        }
+        #aboutus{
+            font-size: 40px;
+            text-align: center;
+        }
+        #apadrinhar{
+            margin: 0;
+            position: relative;
+            top: 5%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 50px;
+            padding-right: 50px;
+            color: #0097A7;
+            background-color: #f8f8f800 ;
+        }
+        #candidate{
+            margin: 0;
+            position: relative;
+            top: 5%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 50px;
+            padding-right: 50px;
+            color: #0097A7;
+            background-color: #f8f8f800 ;
+        }
+        #textabout{
+            font-size: 20px;
+            margin: 3%;
+            text-align: center;
+            letter-spacing: 0.10pc ;
+        }
+        #sponsor{
+            background-color: whitesmoke ;
+            height: 150px;
+        }
+        #footer{
+            width: 100%;
+            height: 200px;
+            background-color: whitesmoke;
+        }
     </style>
 </head>
 <body>
 <div id="title">
-    <img id="logo"src="img/logo.png" alt="not">
+    <img id="logo" src="https://i.ibb.co/M8sG2xP/logo.png" alt="imageNotFound">
     <h1 id="titletext">Voice to the silent</h1>
 </div>
 <section id="about"><h2 id="aboutus">About us</h2>
@@ -42,7 +111,7 @@
     <div class="container">
         <div class="row">
             <div class="col text-center">
-                <button type="button" id="apadrinhar" class="btn btn-dark btn-lg download-button"><i class="fas fa-hand-holding-heart fa-lg" style="font-size: 70px;"></i> <br> <br>Give  </button>
+                <a th:href="@{'/options/'}"><button type="button" id="apadrinhar" class="btn btn-dark btn-lg download-button"><i th:href="@{'/options/'}" class="fas fa-hand-holding-heart fa-lg" style="font-size: 70px;"></i> <br> <br>Give  </button></a>
                 <button type="button" id="candidate" class="btn btn-dark btn-lg download-button"><i class="fas fa-fist-raised fa-lg" style="font-size: 70px;"></i> <br> <br> Candidate </button>
             </div>
         </div>
