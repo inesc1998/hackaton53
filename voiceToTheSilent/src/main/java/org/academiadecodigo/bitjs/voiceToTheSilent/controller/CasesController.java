@@ -37,12 +37,11 @@ public class CasesController {
             return "form";
     }
 
-    @RequestMapping(method = RequestMethod.POST, path = {"/{id}"}, params = "action=save")
+    @RequestMapping(method = RequestMethod.POST, path = {"/{id}"}/*, params = "action=save"*/)
     public String saveGodfather(@PathVariable Integer id, @ModelAttribute("godfather") Godfather godfather, RedirectAttributes redirectAttributes) {
-
         //godfatherService.populateList(godfather);
-        redirectAttributes.addFlashAttribute("lastAction", "Saved " + godfather.getName());
-        return "redirect:/";
+        redirectAttributes.addFlashAttribute("lastAction", " Your donation is very important for us " + godfather.getName() + ". We will get in touch soon!");
+        return "redirect:/cases/" + id;
     }
 
     @Autowired

@@ -5,7 +5,7 @@ public class Godfather {
     private Integer choiceId;
     private Integer id;
     private String name;
-    private int contact;
+    private Integer contact;
     private String email;
     private String wayToHelp;
 
@@ -26,11 +26,11 @@ public class Godfather {
         this.name = name;
     }
 
-    public int getContact() {
+    public Integer getContact() {
         return contact;
     }
 
-    public void setContact(int contact) {
+    public void setContact(Integer contact) {
         this.contact = contact;
     }
 
